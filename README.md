@@ -1,8 +1,17 @@
 # czsc - 缠中说禅技术分析工具
->源于[缠中说缠博客](http://blog.sina.com.cn/chzhshch)，欢迎加微信探讨，我的微信号是 `zengbin93`
+>源于[缠中说缠博客](http://blog.sina.com.cn/chzhshch)，欢迎加群探讨，
+>QQ群：`1125818657`，加群请备注自己对缠论的了解程度，谢谢。
 
-* [在线体验](http://103.235.232.152:8005/?ts_code=000001.SH&asset=I&trade_date=20200228&freqs=5min,30min)
-* 参数说明：1）ts_code 是 tushare 的代码；2）asset 现在有两个值，E 表示股票，I 表示指数
+> 考虑到我自己对缠论的理解还在“四不像”水平，czsc 这个库只有参考的价值。画画笔和线段也还行，但这个离缠论分析还很远
+
+
+## 问题讨论
+
+>在 [issues](https://github.com/zengbin93/czsc/issues) 中提出了一些值得探讨的实战问题，欢迎积极参与讨论，我可以负责实现一些好的想法，代码开源。
+
+* [如何分析选股策略的历史表现？](https://github.com/zengbin93/czsc/issues/17)
+
+
 
 ## 安装
 
@@ -38,9 +47,15 @@ pip install czsc -U -i https://pypi.python.org/simple
 
 ## 使用方法
 
-目前已经实现了缠论的 笔、线段、中枢 的自动识别，核心代码在 `chan.analyze` 中；
+目前已经实现了缠论的 笔、线段、中枢 的自动识别，核心代码在 `czsc.analyze` 中；
 
 使用 Tushare Pro / 聚宽 / 掘金 / 天勤 的数据进行缠中说禅技术分析结果展示: https://github.com/zengbin93/czsc_web_ui
+
+## examples
+
+* [pyecharts 可视化分析结果](https://github.com/zengbin93/czsc/blob/master/examples/pyecharts%20%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90%E7%BB%93%E6%9E%9C.ipynb)
+* [使用 czsc 进行选股](https://github.com/zengbin93/czsc/blob/master/examples/%E4%BD%BF%E7%94%A8CZSC%E8%BF%9B%E8%A1%8C%E9%80%89%E8%82%A1.ipynb)
+
 
 ## 结合 tushare.pro 的数据使用
 
@@ -48,8 +63,9 @@ py 文件地址： examples/combine_with_tushare.py
 
 没有 token，到 https://tushare.pro/register?reg=7 注册下
 
-## 结合掘金的数据使用
+## 结合聚宽的数据使用
 
-py 文件地址： examples/combine_with_goldminer.py
+py 文件地址： examples/use_czsc_with_jq.py
+
 
 
